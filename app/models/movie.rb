@@ -14,7 +14,7 @@
 #
 class Movie < ApplicationRecord
 
-  def my_director
+  def director
     dir_id = self.director_id
     matching_directors = Director.where({ :id => dir_id })
   
